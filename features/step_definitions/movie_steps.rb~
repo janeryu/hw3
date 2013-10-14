@@ -16,7 +16,7 @@ Then /I should see "(.*)" before "(.*)"/ do |e1, e2|
   #  ensure that that e1 occurs before e2.
   #  page.body is the entire content of the page as a string.
     #flunk "Unimplemented"
-    assert page.has_content?(/#{e1}.*#{e2}/m), e1+" not found before "+e2#+" in "+page.body
+    assert page.has_content?(/#{e1}.*#{e2}/m), e1+" not found before "+e2+" in "+page.body
 end
 
 # Make it easier to express checking or unchecking several boxes at once
